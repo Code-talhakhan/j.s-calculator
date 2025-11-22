@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-calculator</title>
+</head>
+<style>
+    .main{
+        background-color: black;
+        width: 380px;
+        height: 500px;
+        margin: 0 auto;
+        padding-top: 5px;
+        margin-top: 70px;
+        border-radius: 30px;
+        font-size: 30px;
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
+
+    }
+    .main h1 {
+        color: white;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .para{
+        background-color: orangered;
+        width: 300px;
+        margin: 0 auto;
+        border-radius: 30px;
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.9);
+    }
+    ul{
+        text-align: center;
+        list-style: none;
+    }
+    li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-style: italic;
+    }
+    li a:hover{
+        color: black;
+    }
+    body{
+        background-color: black;
+    }
+
+
+</style>
+<body>
+    <div class="main">
+        <h1>Welcome to Operator_JS</h1>
+        <div class="para">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Addition (+)</a></li>
+                <li><a href="sub.html">Subtraction (-)</a></li>
+                <li><a href="multiply.html">Multiply (*)</a></li>
+                <li><a href="divide.html">Divide (/)</a></li>
+                <li><a href="module.html">Modulus (%)</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+     <script>
+    var num1 = prompt("Enter first number:");
+    console.log(num1);
+
+    var num2 = prompt("Enter second number:");
+    console.log(num2);
+
+    
+    num1 = Number(num1);
+    num2 = Number(num2);
+
+    
+    var answer = num1 - num2;
+
+    
+    alert("Result: " + answer);
+    console.log(answer);
+</script>
+
+    
+</body>
+</html>
